@@ -1,7 +1,285 @@
+/* коментувати ctrl+? */
+
+:root {
+  background: purple;
+}
+
 html {
   max-width: 720px;
+
+  background: blue;
 }
 
 body {
   background: #fff;
+}
+
+* {
+  color: black;
+}
+
+h1 {
+  color: green;
+}
+
+.box {
+  background: #cfcfcf;
+}
+
+#user,
+.user {
+  color: blue;
+}
+
+h3,
+button {
+  color: black;
+}
+
+/* без крапки тег, з крапкою клас, #id */
+
+.button {
+  background: black;
+  color: red;
+}
+
+#box > p {
+  color: aliceblue;
+}
+
+footer > .user {
+  color: hotpink;
+}
+
+footer > h1 {
+  color: hotpink;
+}
+
+footer em {
+  color: hotpink;
+}
+
+footer .child {
+  color: cornflowerblue;
+}
+
+.p-top {
+  background: #fff;
+}
+
+h1 + p {
+  background: black;
+}
+
+h3 ~ p {
+  background: rgb(17, 235, 210);
+}
+
+.card-dark {
+  background: #ededed;
+}
+
+.item:first-child {
+  color: blue;
+}
+
+.item:last-child {
+  color: rgb(238, 255, 0);
+}
+
+.item:only-child {
+  color: rgb(53, 229, 10);
+}
+
+.item:first-of-type {
+  color: rgb(238, 255, 0);
+}
+
+.item:last-of-type {
+  color: rgb(231, 155, 24);
+}
+
+.item:only-of-type {
+  color: rgb(121, 122, 13);
+}
+
+.item:nth-child(5n + 6) {
+  color: aqua;
+}
+/* в дужках замість порядкового номеру: для парних елементів even, odd для непарних, 3n+1 по формулі n=1 ніби порядковий номер*/
+
+.item:nth-last-child(2) {
+  color: rgb(21, 20, 20);
+}
+
+.item:nth-of-type(2) {
+  color: rgb(132, 130, 130);
+}
+
+li:not(.item) {
+  color: blueviolet;
+}
+
+p:empty {
+  height: 10px;
+  background: rgb(53, 229, 10);
+}
+
+.input-dark {
+  background: rgb(150, 150, 150);
+}
+
+.input-dark[required] {
+  background: rgb(238, 96, 96);
+}
+
+.input-dark[type='number'] {
+  background: rgb(20, 190, 88);
+}
+
+.small-img[alt~='small'] {
+  height: 500px;
+}
+
+a[rel~='external'] {
+  color: rgb(238, 194, 16);
+}
+
+button[class|='btn'] {
+  background: rebeccapurple;
+}
+
+a[class^='btn'] {
+  background: rgb(192, 166, 218);
+}
+
+a[class*='btn'] {
+  background: rgb(173, 106, 240);
+}
+
+a[class$='big'] {
+  background: rgb(12, 224, 12);
+}
+
+.btn::first-letter {
+  color: aqua;
+}
+
+.big-text::first-line {
+  color: rgb(48, 3, 3);
+}
+
+.input-dark::placeholder {
+  color: rgb(61, 236, 12);
+}
+
+.big-text::before {
+  content: '$$$';
+  background: black;
+}
+
+.big-text::after {
+  content: '$$$';
+  color: azure;
+  background: black;
+}
+
+#test:target {
+  color: rgb(82, 233, 18);
+}
+
+.link:link {
+  color: black;
+}
+
+.link:hover {
+  color: green;
+}
+
+.link:active {
+  color: purple;
+}
+
+.card:active {
+  background: plum;
+}
+
+input {
+  background-color: aquamarine;
+}
+
+input:focus {
+  background-color: bisque;
+}
+
+.card:focus-within {
+  background-color: antiquewhite;
+}
+
+.card:lang(en) {
+  background-color: rgb(202, 191, 191);
+}
+
+.card:lang(en) span:after {
+  content: '(en)';
+}
+
+span {
+  color: black;
+}
+
+button {
+  background-color: greenyellow;
+}
+
+button:enabled {
+  background-color: green;
+}
+
+button:disabled {
+  background-color: rgb(41, 231, 41);
+}
+
+.inp:read-write {
+  background-color: antiquewhite;
+}
+
+.inp:read-only {
+  background-color: rgb(236, 141, 17);
+}
+
+input[type='checkbox']:checked ~ span {
+  background: red;
+}
+
+.valid:valid {
+  background: yellow;
+}
+
+.valid:invalid {
+  background: goldenrod;
+}
+
+.valid:optional {
+  background: green;
+}
+
+.number:focus {
+  background: gray;
+}
+
+.number:out-of-range {
+  background: red;
+}
+
+.number:in-range {
+  background: green;
+}
+
+.number:invalid {
+  background: rgb(231, 239, 6);
+}
+
+input:placeholder-shown ~ span {
+  background: pink;
 }
