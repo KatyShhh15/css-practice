@@ -186,3 +186,19 @@ p {
   overflow: hidden;
   overflow: scroll;
 }
+
+body {
+  background-image: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(127, 106, 255, 0.4) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.hero_text {
+  padding: 40px;
+  color: green;
+
+  border-image-source: url('/img/test1.png');
+  border-image-width: 25%;
+}
